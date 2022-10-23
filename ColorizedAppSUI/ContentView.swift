@@ -35,12 +35,6 @@ struct ColorSliderView: View {
     @Binding var sliderValue: Double
     @State private var alertPresented = false
     
-//    @State private var numberFormatter: NumberFormatter = {
-//        var nf = NumberFormatter()
-//        nf.numberStyle = .decimal
-//        return nf
-//    }()
-    
     var body: some View {
         HStack {
             Text(lround(sliderValue).formatted())
@@ -58,7 +52,7 @@ struct ColorSliderView: View {
                     Alert(title: Text("Wrong Format"),
                           message: Text("Please enter value from 0 to 255"),
                           dismissButton: .cancel(Text("ОК")))
-            })
+                })
         }
     }
     
