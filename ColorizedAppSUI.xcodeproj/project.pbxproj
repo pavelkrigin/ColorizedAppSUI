@@ -11,6 +11,7 @@
 		CA72D6EC29048B0B0078A1BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72D6EB29048B0B0078A1BE /* ContentView.swift */; };
 		CA72D6EE29048B0E0078A1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA72D6ED29048B0E0078A1BE /* Assets.xcassets */; };
 		CA72D6F129048B0E0078A1BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA72D6F029048B0E0078A1BE /* Preview Assets.xcassets */; };
+		CA72D6F82905E32F0078A1BE /* DisplayShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72D6F72905E32F0078A1BE /* DisplayShow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CA72D6EB29048B0B0078A1BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA72D6ED29048B0E0078A1BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA72D6F029048B0E0078A1BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA72D6F72905E32F0078A1BE /* DisplayShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayShow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				CA72D6E929048B0B0078A1BE /* ColorizedAppSUIApp.swift */,
 				CA72D6EB29048B0B0078A1BE /* ContentView.swift */,
+				CA72D6F72905E32F0078A1BE /* DisplayShow.swift */,
 				CA72D6ED29048B0E0078A1BE /* Assets.xcassets */,
 				CA72D6EF29048B0E0078A1BE /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA72D6EC29048B0B0078A1BE /* ContentView.swift in Sources */,
+				CA72D6F82905E32F0078A1BE /* DisplayShow.swift in Sources */,
 				CA72D6EA29048B0B0078A1BE /* ColorizedAppSUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
