@@ -88,19 +88,39 @@ struct ContentView: View {
     @State private var redColor = Double.random(in: 0...255)
     @State private var greenColor = Double.random(in: 0...255)
     @State private var blueColor = Double.random(in: 0...255)
+    @State private var sliderValue = Double.random(in: 0...255)
     
     var body: some View {
         ZStack {
             Color(.systemGroupedBackground)
                 .ignoresSafeArea()
-            
             VStack {
+                RGBPresenter(redColor: redColor, greenColor: greenColor, blueColor: blueColor)
+                ColorSliderView(sliderValue: $sliderValue)
+                
+//                SliderRGB(sliderColor: .red, sliderValue: $redValue)
+//                SliderRGB(sliderColor: .green, sliderValue: $greenValue)
+//                SliderRGB(sliderColor: .blue, sliderValue: $blueValue)
                 
                 
                 Spacer()
             }.padding()
         }
         
+    }
+}
+
+struct ColorSliderView: View {
+    @Binding var sliderValue: Double
+
+    var body: some View {
+        HStack {
+            Text(lround(sliderValue).formatted())
+                .frame(width: 35)
+            Slider(value: $sliderValue, in: 0...255, step: 1)
+            Text("255").foregroundColor(.red)
+        }
+        .padding(.horizontal)
     }
 }
 
