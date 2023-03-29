@@ -26,7 +26,6 @@ struct ContentView: View {
                 Spacer()
             }.padding()
         }
-        
     }
 }
 
@@ -42,7 +41,7 @@ struct ColorSliderView: View {
             Slider(value: $sliderValue, in: 0...255, step: 1)
                 .accentColor(sliderColor)
                 .shadow(radius: 20)
-            TextField(lround(sliderValue).formatted(), text: <#Binding<String>#>)
+            TextField(lround(sliderValue).formatted(), text: <#Binding<String>#>, text: )
                 .frame(width: 50)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .multilineTextAlignment(.leading)
